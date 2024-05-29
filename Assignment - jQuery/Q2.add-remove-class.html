@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bt{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .add{
+            padding: 10px 10px;
+        }
+        p{
+            text-align: center;
+        }
+        .remo{
+            padding: 10px 10px;
+        }
+        .red{
+            color: rgb(255, 0, 0);
+        }
+       
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facere aliquam harum, <br>
+         est ipsa sunt quibusdam pariatur officiis vitae inventore? Lorem ipsum dolor sit <br>
+          amet consectetur adipisicing elit. Magnam perferendis et quas tempore ullam facilis <br>
+           officia nemo placeat natus minima, illum  odio necessitatibus assumenda provident nostrum <br>
+            corrupti ipsa nam cumque minus. Corporis rerum necessitatibus nesciunt esse earum quod <br>
+             accusamus omnis. Porro totam molestias et hic repudiandae quaerat ipsa iste commodi?</p>
+        
+    <div class="bt">
+        <button class="add">Add color</button>
+    <button class="remo">Remove color</button>
+    </div>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".add").click(function(){
+                $("p").addClass("red");
+                $(".remo").click(function(){
+                $("p").removeClass("red");
+            });
+            });
+            
+        });
+        
+    </script>
+</body>
+</html>

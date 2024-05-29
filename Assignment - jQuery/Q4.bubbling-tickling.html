@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        margin: 10px;
+        height: 500px;
+        width: 900px;
+      }
+      .box2 {
+        margin: 10px;
+        height: 400px;
+        width: 800px;
+      }
+      .box3 {
+        margin: 10px;
+        height: 300px;
+        width: 700px;
+      }
+      .box4 {
+        margin: 10px;
+        height: 200px;
+        width: 600px;
+      }
+      .box5 {
+        margin: 10px;
+        height: 100px;
+        width: 500px;
+      }
+      input {
+        margin: 40px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box1">
+        <div class="box2">
+          <div class="box3">
+            <div class="box4">
+              <div class="box5">
+                <input type="text" name="" id="" placeholder="name" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("input").click(function () {
+          $("input").parentsUntil("body").css({ border: "2px solid red" });
+        });
+      });
+    </script>
+  </body>
+</html>
